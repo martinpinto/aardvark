@@ -1,0 +1,29 @@
+# General configuration for the application
+[app]
+name = "aardvark-server"
+environment = "development" # "development" or "production"
+
+[api]
+version = 1
+root =  "/api"
+host = "localhost"
+port =  3001
+
+[oauth]
+secret = "server secret"    
+
+[twitter]
+key = "consumer_key"
+# secret = "secret_key"
+callback = "/twitter_callback"
+
+[database]
+# Database configuration
+    [database.mysql]
+    baseurl = "localhost"
+    protocol = "http://"
+    host = "127.0.0.1"
+    port = "3306"
+    database = ""
+    # user = ""
+    # password = ""
