@@ -11,13 +11,10 @@ export const controller = {
     next: express.NextFunction
   ): Promise<User[]> {
     // check if user equals administrator
-    let users = [
-        { id: 1, name: 'Todd Motto', image: 'image-1.jpg' },
-        { id: 2, name: 'Brad Green', image: 'image-2.jpg' },
-        { id: 3, name: 'Igor Minar', image: 'image-3.jpg' }
-    ];
+    // check if user equals administrator
+    let users = await UserService.getUsers();
 
-    res.json(users);    
+    res.status(200).json(users);    
     return null;
   },
   async getOneAction(

@@ -3,8 +3,6 @@ import { jwtService } from '../../shared/services/jwt.service';
 import { controller } from './user.controller';
 import * as jwt from 'express-jwt';
 
-const { Config } = require('../../config/index');
-let config = Config();
 const router = express.Router();
 
 router.use(jwtService);

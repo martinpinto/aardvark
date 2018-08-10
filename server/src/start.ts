@@ -19,13 +19,12 @@ import { router as apiRouter } from './routes';
 import UsersService from './routes/user/user.service';
 import User from './routes/user/user.model';
 
-const { Config } = require('./config/index');
+const { config } = require('./config/index');
 const { logger } = require('./shared/services/logger.service');
 const { fs } = require('fs');
 
 debug("ts-express:server");
 
-const config = Config();
 const app: express.Application = express();
 const port = normalizePort(process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || config.api.port || '3000');
 const ip = process.env.OPENSHIFT_NODEJS_IP || config.api.host || "127.0.0.1";
