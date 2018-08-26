@@ -1,0 +1,17 @@
+@import '../../../../styles';
+
+#main-header-logo {
+    width: 50px;
+}
+
+#main-header ::ng-deep {
+    nav {
+        background: $color-primary-4 !important;    
+    }
+}
+
+#main-sidebar ::ng-deep {
+    .main-container {
+        background: $color-secondary-2-1 !important;
+    }
+}
