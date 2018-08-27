@@ -1,0 +1,35 @@
+<nb-layout>
+  <nb-sidebar id="main-sidebar" state="compacted">
+    <div class="main-sidebar-icon-bar-top">
+      <i class="material-icons main-sidebar-icon">
+        home
+      </i>
+    </div>
+    <div class="main-sidebar-icon-bar-bottom">
+      <i class="material-icons main-sidebar-icon">
+        dashboard
+      </i>
+      <i class="material-icons main-sidebar-icon">
+        timeline
+      </i>
+      <i class="material-icons main-sidebar-icon">
+        assignment
+      </i>
+      <i class="material-icons main-sidebar-icon">
+        build
+      </i>
+    </div>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    <div>
+      <nb-layout-header fixed id="main-header">
+        <img src="../../../../assets/logo_transparent_small.png" id="main-header-logo" />
+      </nb-layout-header>
+    </div>
+    <div id="main">
+      Test
+      <router-outlet></router-outlet> 
+    </div>
+  </nb-layout-column>
+</nb-layout>

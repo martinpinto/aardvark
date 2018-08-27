@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router'; // we also need angular router f
 import { NbThemeModule } from '@nebular/theme';
 
 import { AppComponent } from './app.component';
-import { DashboardModule } from './views/dashboard/dashboard.module';
+import { MainModule } from './views/main/main.module';
 
 @NgModule({
   declarations: [
@@ -13,9 +13,10 @@ import { DashboardModule } from './views/dashboard/dashboard.module';
   ],
   imports: [
     BrowserModule,
-    NbThemeModule.forRoot({ name: 'default' }), // this will enable the default theme, you can change this to `cosmic` to enable the dark theme,
+    // this will enable the default theme, you can change this to `cosmic` to enable the dark theme,
+    NbThemeModule.forRoot({ name: 'default' }),
     RouterModule,
-    DashboardModule,
+    MainModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
