@@ -6,18 +6,18 @@
       </i>
     </div>
     <div class="main-sidebar-icon-bar-bottom">
-      <i class="material-icons main-sidebar-icon">
+      <a [routerLink]="['dashboard']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
         dashboard
-      </i>
-      <i class="material-icons main-sidebar-icon">
-        timeline
-      </i>
-      <i class="material-icons main-sidebar-icon">
+      </i></a>
+      <a [routerLink]="['jobs']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
         assignment
-      </i>
-      <i class="material-icons main-sidebar-icon">
+      </i></a>
+      <a [routerLink]="['analytics']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
+        timeline
+      </i></a>
+      <a [routerLink]="['settings']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
         build
-      </i>
+      </i></a>
     </div>
   </nb-sidebar>
 
@@ -28,7 +28,6 @@
       </nb-layout-header>
     </div>
     <div id="main">
-      Test
       <router-outlet></router-outlet> 
     </div>
   </nb-layout-column>
