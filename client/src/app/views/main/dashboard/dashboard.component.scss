@@ -39,8 +39,10 @@
     margin-bottom: 30px;
 }
 
-.main-sidebar-icon-active {
-    color: white;
+.main-sidebar-icon-active ::ng-deep {
+    .main-sidebar-icon {
+        color: white;
+    }
 }
 
 .material-icons {
