@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbCardModule } from '@nebular/theme';
+import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbCardModule, NbSearchModule } from '@nebular/theme';
 import { ChartModule } from 'angular2-chartjs';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -27,6 +27,8 @@ const routes: Routes = [
     NbLayoutModule,
     NbSidebarModule,
     NbCardModule,
+    NbLayoutModule,
+    NbSearchModule,
     RouterModule.forRoot(routes),
     ChartModule
   ],

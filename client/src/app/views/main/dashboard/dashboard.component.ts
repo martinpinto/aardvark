@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NbSearchService } from '@nebular/theme';
 
 @Component({
   selector: 'main-dashboard',
@@ -6,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  value = '';
 
-  constructor() { }
+  constructor(private searchService: NbSearchService) {
+    this.searchService.onSearchSubmit()
+      .subscribe((data: any) => {
+        this.value = data.term;
+      });
+  }
 
   ngOnInit() {
   }
