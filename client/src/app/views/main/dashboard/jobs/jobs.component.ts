@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jobs.component.scss']
 })
 export class JobsComponent implements OnInit {
+  public isCollapsed = false;
 
   constructor() { }
 

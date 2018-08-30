@@ -1,3 +1,50 @@
-<p>
-  jobs works!
-</p>
+<nb-layout>
+  
+  <nb-layout-column id="jobs-left-column">
+    <nb-card>
+      <nb-card-body>
+          <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+            Toggle
+          </button>
+        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+      </nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-body>
+        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+      </nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-body>
+        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+      </nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-body>
+        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+      </nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-body>
+        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+      </nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-body>
+        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+  
+  <nb-layout-column id="jobs-right-column">
+    <div id="collapseExample" [ngbCollapse]="isCollapsed">
+      <div class="card">
+        <div class="card-body">
+          You can collapse this card by clicking Toggle
+        </div>
+      </div>
+    </div>
+  </nb-layout-column>
+  
+</nb-layout>

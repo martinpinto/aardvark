@@ -6,7 +6,7 @@
       </i>
     </div>
     <div class="main-sidebar-icon-bar-bottom">
-      <a [routerLink]="['dashboard']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
+      <a href="/" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
         dashboard
       </i></a>
       <a [routerLink]="['jobs']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
@@ -25,6 +25,13 @@
     <div>
       <nb-layout-header fixed id="main-header">
         <img src="../../../../assets/logo_transparent_small.png" id="main-header-logo" />
+       
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm"><i class="material-icons">search</i></span>
+          </div>
+          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
       </nb-layout-header>
     </div>
     <div id="main">

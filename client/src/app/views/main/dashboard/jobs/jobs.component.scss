@@ -1,0 +1,19 @@
+:host nb-layout-column {
+    height: 50vw;
+}
+
+#jobs-left-column{
+    padding: 0;
+}
+
+#jobs-right-column{
+    padding: 0;
+    padding-left: 2rem;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+nb-card {
+    border-radius: 0;
+}
