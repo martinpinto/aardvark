@@ -70,14 +70,19 @@
   
     /* Support for IE. */
     font-feature-settings: 'liga';
-  }
+}
 
-  .input-group > .input-group-prepend > .input-group-text {
+#header-user {
+    min-width: 150px;
+    color: white !important;
+}
+
+.input-group > .input-group-prepend > .input-group-text {
     border-radius: 25px;
     left: 50px;
     position: relative;
     z-index: 100;
-  }
+}
 
 .form-control {
     border-radius: 25px !important;

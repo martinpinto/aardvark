@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbCardModule, NbSearchModule, NbInputModule } from '@nebular/theme';
+import { NbSidebarModule, NbLayoutModule, NbSidebarService, NbCardModule, NbSearchModule, NbInputModule, NbTabsetModule, NbUserModule } from '@nebular/theme';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartModule } from 'angular2-chartjs';
 
@@ -31,6 +31,8 @@ const routes: Routes = [
     NbLayoutModule,
     NbSearchModule,
     NbInputModule,
+    NbTabsetModule,
+    NbUserModule,
     NgbCollapseModule,
     RouterModule.forRoot(routes),
     ChartModule

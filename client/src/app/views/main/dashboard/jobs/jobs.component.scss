@@ -2,18 +2,25 @@
     height: 50vw;
 }
 
-#jobs-left-column{
-    padding: 0;
-}
-
-#jobs-right-column{
-    padding: 0;
-    padding-left: 2rem;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-}
-
 nb-card {
     border-radius: 0;
+}
+
+#jobs-collapse {
+    margin-top: -40px;
+    height: 100vh;
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .jobs-card {
+        height: 100vh;
+    }
+    .jobs-card-body {
+        height: 100vh;
+        padding-top: 0;
+        .jobs-card-body-tabs {
+            padding: 15px;
+        }
+    }
 }

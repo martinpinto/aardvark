@@ -1,50 +1,112 @@
-<nb-layout>
-  
-  <nb-layout-column id="jobs-left-column">
-    <nb-card>
-      <nb-card-body>
-          <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
-            [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-            Toggle
-          </button>
-        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-      </nb-card-body>
-    </nb-card>
-    <nb-card>
-      <nb-card-body>
-        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-      </nb-card-body>
-    </nb-card>
-    <nb-card>
-      <nb-card-body>
-        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-      </nb-card-body>
-    </nb-card>
-    <nb-card>
-      <nb-card-body>
-        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-      </nb-card-body>
-    </nb-card>
-    <nb-card>
-      <nb-card-body>
-        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-      </nb-card-body>
-    </nb-card>
-    <nb-card>
-      <nb-card-body>
-        A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
-      </nb-card-body>
-    </nb-card>
-  </nb-layout-column>
-  
-  <nb-layout-column id="jobs-right-column">
-    <div id="collapseExample" [ngbCollapse]="isCollapsed">
-      <div class="card">
-        <div class="card-body">
-          You can collapse this card by clicking Toggle
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>All jobs</h1>
+      <nb-card>
+        <nb-card-body (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="jobs-collapse">
+          <div class="row">
+            <div>
+              <div class="float-left">
+                Job Name
+              </div>
+              <div class="float-right">
+                OS CPU: x MEM: x
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            Job Status
+          </div>        
+        </nb-card-body>
+      </nb-card>
+      <nb-card>
+        <nb-card-body (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="jobs-collapse">
+          <div class="row">
+            <div>
+              <div class="float-left">
+                Job Name
+              </div>
+              <div class="float-right">
+                OS CPU: x MEM: x
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            Job Status
+          </div>
+        </nb-card-body>
+      </nb-card>
+      <nb-card>
+        <nb-card-body (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="jobs-collapse">
+          <div class="row">
+            <div>
+              <div class="float-left">
+                Job Name
+              </div>
+              <div class="float-right">
+                OS CPU: x MEM: x
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            Job Status
+          </div>
+        </nb-card-body>
+      </nb-card>
+      <nb-card>
+        <nb-card-body (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="jobs-collapse">
+          <div class="row">
+            <div>
+              <div class="float-left">
+                Job Name
+              </div>
+              <div class="float-right">
+                OS CPU: x MEM: x
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            Job Status
+          </div>
+        </nb-card-body>
+      </nb-card>
+      <nb-card>
+        <nb-card-body (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="jobs-collapse">
+          <div class="row">
+            <div>
+              <div class="float-left">
+                Job Name
+              </div>
+              <div class="float-right">
+                OS CPU: x MEM: x
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            Job Status
+          </div>
+        </nb-card-body>
+      </nb-card>
+    </div>
+
+    <div class="col-md-6">
+      <div id="jobs-collapse" [ngbCollapse]="isCollapsed">
+        <nb-card class="jobs-card">
+          <nb-card-body class="jobs-card-body">
+            <nb-tabset fullWidth>
+              <nb-tab tabTitle="INFO" class="jobs-card-body-tabs">
+                <p>List of <strong>info</strong>.</p>
+              </nb-tab>
+              <nb-tab tabTitle="LOGS" class="jobs-card-body-tabs">
+                <p>List of <strong>logs</strong>.</p>
+              </nb-tab>
+              <nb-tab tabTitle="SETTINGS" class="jobs-card-body-tabs">
+                <p>List of <strong>settings</strong>.</p>
+              </nb-tab>
+            </nb-tabset>
+          </nb-card-body>
+        </nb-card>
       </div>
     </div>
-  </nb-layout-column>
-  
-</nb-layout>
+  </div>
+</div>
