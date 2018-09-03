@@ -12,8 +12,11 @@
       <a [routerLink]="['jobs']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
         assignment
       </i></a>
+      <a [routerLink]="['logs']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
+        dns
+      </i></a>
       <a [routerLink]="['analytics']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
-        timeline
+        insert_chart
       </i></a>
       <a [routerLink]="['settings']" routerLinkActive="main-sidebar-icon-active"><i class="material-icons main-sidebar-icon">
         build
@@ -32,6 +35,9 @@
           </div>
           <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
         </div>
+        <i class="material-icons">
+          notifications
+        </i>
         <nb-user id="header-user"
           size="middle"
           name="John Doe"

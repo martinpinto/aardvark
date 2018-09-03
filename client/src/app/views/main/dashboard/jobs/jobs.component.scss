@@ -9,18 +9,22 @@ nb-card {
 #jobs-collapse {
     margin-top: -40px;
     height: 100vh;
-    .row {
-        margin-right: 0 !important;
-        margin-left: 0 !important;
+    width: 95vh;
+    .job-status {
+        margin-top: 15px;
     }
-    .jobs-card {
-        height: 100vh;
-    }
-    .jobs-card-body {
+    .jobs-collapse-card-body {
         height: 100vh;
         padding-top: 0;
-        .jobs-card-body-tabs {
+        .jobs-collapse-card-body-tabs {
             padding: 15px;
         }
+    }
+}
+
+.jobs-card {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
