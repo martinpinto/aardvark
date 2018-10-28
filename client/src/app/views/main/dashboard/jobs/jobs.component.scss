@@ -1,3 +1,5 @@
+@import '../../../../../styles';
+
 :host nb-layout-column {
     height: 50vw;
 }
@@ -12,6 +14,23 @@ nb-card {
     width: 95vh;
     .job-status {
         margin-top: 15px;
+
+        .lamp {
+            height: 30px;
+            width: 30px;
+            border: solid 1px grey;
+            border-width: 2px;
+            border-radius: 25px;
+        }
+        .lampRed {
+            background-color: red;
+        }
+        .lampYellow {
+            background-color: yellow;
+        }
+        .lampGreen {
+            background-color: $color-secondary-2-3;
+        }
     }
     .jobs-collapse-card-body {
         height: 100vh;

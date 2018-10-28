@@ -107,6 +107,9 @@
               <div class="col-md-12">
                 <div class="float-left">
                   Job status
+                  <div id="job-status">
+                    <div class="lamp lampGreen"></div>
+                  </div>
                 </div>
                 <div class="float-right">
                   <button nbButton status="danger">DISABLE</button>
@@ -115,8 +118,38 @@
             </div>
             <nb-tabset fullWidth>
               <nb-tab tabTitle="INFO" class="jobs-collapse-card-body-tabs">
+                <form>
+                  <h3>Basic Info</h3>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" disabled>
+                  </div>
+                  <div class="form-group">
+                    <label for="alterEgo">Location</label>
+                    <input type="text" class="form-control" id="alterEgo" disabled>
+                  </div>
+                  <div class="form-group">
+                    <label for="alterEgo">Author</label>
+                    <input type="text" class="form-control" id="alterEgo" disabled>
+                  </div>
+                  <div class="form-group">
+                    <label for="alterEgo">Description</label>
+                    <input type="text" class="form-control" id="alterEgo" disabled>
+                  </div>
+                  <div class="form-group">
+                    <label for="alterEgo">Current Runtime</label>
+                    <input type="text" class="form-control" id="alterEgo" disabled>
+                  </div>
+                  <div class="form-group">
+                    <label for="alterEgo">Last Runtime</label>
+                    <input type="text" class="form-control" id="alterEgo" disabled>
+                  </div>
+                  <button type="submit" class="btn btn-success">Browse</button>
+                </form>
+              </nb-tab>
+              <nb-tab tabTitle="TRIGGERS" class="jobs-collapse-card-body-tabs">
                 <p>List of
-                  <strong>info</strong>.</p>
+                  <strong>triggers</strong>.</p>
               </nb-tab>
               <nb-tab tabTitle="LOGS" class="jobs-collapse-card-body-tabs">
                 <p>List of
@@ -125,10 +158,6 @@
               <nb-tab tabTitle="NOTIFICATIONS" class="jobs-collapse-card-body-tabs">
                 <p>List of
                   <strong>notifications</strong>.</p>
-              </nb-tab>
-              <nb-tab tabTitle="PARAMS" class="jobs-collapse-card-body-tabs">
-                <p>List of
-                  <strong>parameters</strong>.</p>
               </nb-tab>
             </nb-tabset>
           </nb-card-body>
